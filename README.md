@@ -1,14 +1,12 @@
-# THUS-Torun
-
 # LatinBERT
 
-# Clone the Repo
+### Clone the Repo
 git clone https://github.com/dbamman/latin-bert.git
 
-# Create the VirtualEnv
+### Create the VirtualEnv
 python3 -m venv latinbert
 
-# Activate the VirtualEnv
+### Activate the VirtualEnv
 source /home/pietro/latinbert/bin/activate
 # Install requirements
 pip install -r requirements.txt
