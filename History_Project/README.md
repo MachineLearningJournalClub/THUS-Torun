@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-# THUS-TORUN
-=======
 # LatinBERT
 
 ### Clone the Repo
@@ -24,4 +21,3 @@ pip install --user ipykernel
 python -m ipykernel install --user --name=latinbert
 
 then choose the kernel for jupyter
->>>>>>> Stashed changes
