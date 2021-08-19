@@ -8,6 +8,8 @@ from torch import nn
 from transformers import BertModel, BertPreTrainedModel
 import pickle
 import os
+import gc
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -262,7 +264,7 @@ if __name__ == "__main__":
 		size=batched_transforms[b].shape
 		b_size=size[0]
         
-		print('\n','batch num: ' ,b,'size of: ' ,len(batched_data[b]))
+		#print('\n','batch num: ' ,b,'size of: ' ,len(batched_data[b]))
 
 		berts=model.forward(batched_data[b], attention_mask=batched_mask[b], transforms=batched_transforms[b])
 		berts=berts.detach()
@@ -287,7 +289,6 @@ if __name__ == "__main__":
 ####UTILS
 	torch.cuda.empty_cache()
 
-	import gc
 	gc.collect()
 
 	corretti = open('corretti.txt', 'w')
