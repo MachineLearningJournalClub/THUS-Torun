@@ -1,19 +1,16 @@
 # Description 
-
+Abstract of the paper ???
 
 # Folders
-- latin_library_text bigger database of txt files
 
-- library reduced and super_reduced smaller version of database
+- library_super_reduced database of txt files from Latin Text Library
 
-- corpus0 and corpus2 contain similar text to Gallus, specific authors
+- corpus2 contain similar text to Gallus, specific authors belonging to the same centuries of Gallus.
 
 - pickle_gallus_related contain the processed vectors from the text 
-of corpus2. how to use the pickle files is in Gallus Notebook.
+of corpus2. How to use the pickle files is in 'analysis_from_pickles' notebook
 
-- pickle_latin_library_text contain the processed vectors from the text of library_reduced.
-
-- analysis contain different notebooks of analysis
+- analysis contain different notebooks of analysis made for the paper.
 
 - utils contains different python scripts 
 
@@ -21,6 +18,8 @@ of corpus2. how to use the pickle files is in Gallus Notebook.
 # Files
 - script_generator.py is a python script for generate the bash script that compute the bert representation of the given texts and it saves the representation in a convenient way that is pickle files.
 in this file you have to set the source folder, the output folder and the folder in which the Bert Model is contained.
+
+- latbert.py is another python file used for the preprocessing of the texts.
 
 - script_generator_colab is the same python script but adapted for colab usage
 - text_to_pickle.py is the python script that is called by the bash script.sh.
